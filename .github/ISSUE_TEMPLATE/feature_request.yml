@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an improvement to DiscoFish.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem or need. Avoid personal information; this request will be public.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true

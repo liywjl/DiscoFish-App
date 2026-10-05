@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a problem with the DiscoFish desktop or mobile app.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report and its attachments will be public. Do not include passwords, license keys, pairing codes, personal information, or private URLs. Report security vulnerabilities using the private security-reporting link instead.
+  - type: dropdown
+    id: app
+    attributes:
+      label: Affected app
+      options:
+        - Desktop host
+        - Mobile app
+        - Browser listener
+        - Multiple apps
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Include the host and listener versions if they differ, or say unknown.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and browser
+      description: Include the OS version and browser name/version when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the steps that lead to the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Optional diagnostics or screenshots
+      description: You can save a report from the app's Report a problem dialog. Review it before attaching it here; attachments are public.
